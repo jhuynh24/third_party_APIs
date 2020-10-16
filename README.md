@@ -1,1 +1,3 @@
-# third_party_APIs
+For this application I had to create a functioning daily schedule tool. I added time blocks in the HTML code to create the layout for the calender and created specific ID's for each time block. Using javascript and jquery I then created a functioning save button and textbox that recorded the text the user inputs for each hour on the schedule. With the local storage code in the .js file, the user's data persists through accessing the console's local storage. I also created a currentTime function that accesses the current time (updated every second). With the currentTime function the schedule highlights red for the current hour, green for the next hour, and grey fot the past hour(s).
+
+![screenshot](https://github.com/jhuynh24/third_party_APIs/blob/main/assets/screenshot.PNG)
