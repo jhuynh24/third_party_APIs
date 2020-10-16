@@ -1,6 +1,9 @@
 $(document).ready(function() {
+
+    // Set the date
     $("#currentDay").text(moment().format('MMMM Do YYYY'));
 
+    // Save button code
     $(".saveBtn").on("click", function() {
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
@@ -9,6 +12,7 @@ $(document).ready(function() {
     });
 
 
+    // Code for local storage persistance
     $("#9 .description").val(localStorage.getItem("9"));
     $("#10 .description").val(localStorage.getItem("10"));
     $("#11 .description").val(localStorage.getItem("11"));
@@ -20,6 +24,7 @@ $(document).ready(function() {
     $("#17 .description").val(localStorage.getItem("17"));
 
 
+    // Code to access the current time for the scheduling display
     function currentTime() {
         var hour = moment().hour();
         console.log(hour);
@@ -40,6 +45,7 @@ $(document).ready(function() {
         })
     }
 
+    // Code for updating the clock
     var interval = setInterval(currentTime, 1000);
 
 })
