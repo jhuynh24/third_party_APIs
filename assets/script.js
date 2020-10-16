@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#currentDay").text(moment().format('MMMM Do YYYY'));
-    
+
     $(".saveBtn").on("click", function() {
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
